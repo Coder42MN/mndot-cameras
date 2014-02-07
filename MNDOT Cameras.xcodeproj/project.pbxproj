@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DFC8D3918A5479A0076F4DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFC8D3818A5479A0076F4DE /* Foundation.framework */; };
+		2DFC8D3B18A5479A0076F4DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFC8D3A18A5479A0076F4DE /* CoreGraphics.framework */; };
+		2DFC8D3D18A5479A0076F4DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFC8D3C18A5479A0076F4DE /* UIKit.framework */; };
+		2DFC8D4318A5479A0076F4DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DFC8D4118A5479A0076F4DE /* InfoPlist.strings */; };
+		2DFC8D4518A5479A0076F4DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC8D4418A5479A0076F4DE /* main.m */; };
+		2DFC8D4918A5479A0076F4DE /* UNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC8D4818A5479A0076F4DE /* UNAppDelegate.m */; };
+		2DFC8D4C18A5479A0076F4DE /* UNRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC8D4B18A5479A0076F4DE /* UNRootViewController.m */; };
+		2DFC8D4F18A5479A0076F4DE /* UNDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC8D4E18A5479A0076F4DE /* UNDataViewController.m */; };
+		2DFC8D5218A5479A0076F4DE /* UNModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC8D5118A5479A0076F4DE /* UNModelController.m */; };
+		2DFC8D5518A5479A0076F4DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFC8D5318A5479A0076F4DE /* Main.storyboard */; };
+		2DFC8D5718A5479A0076F4DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DFC8D5618A5479A0076F4DE /* Images.xcassets */; };
+		2DFC8D5E18A5479A0076F4DE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFC8D5D18A5479A0076F4DE /* XCTest.framework */; };
+		2DFC8D5F18A5479A0076F4DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFC8D3818A5479A0076F4DE /* Foundation.framework */; };
+		2DFC8D6018A5479A0076F4DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFC8D3C18A5479A0076F4DE /* UIKit.framework */; };
+		2DFC8D6818A5479A0076F4DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DFC8D6618A5479A0076F4DE /* InfoPlist.strings */; };
+		2DFC8D6A18A5479A0076F4DE /* MNDOT_CamerasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC8D6918A5479A0076F4DE /* MNDOT_CamerasTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DFC8D6118A5479A0076F4DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DFC8D2D18A5479A0076F4DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DFC8D3418A5479A0076F4DE;
+			remoteInfo = "MNDOT Cameras";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2DFC8D3518A5479A0076F4DE /* MNDOT Cameras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MNDOT Cameras.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DFC8D3818A5479A0076F4DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2DFC8D3A18A5479A0076F4DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2DFC8D3C18A5479A0076F4DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2DFC8D4018A5479A0076F4DE /* MNDOT Cameras-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MNDOT Cameras-Info.plist"; sourceTree = "<group>"; };
+		2DFC8D4218A5479A0076F4DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2DFC8D4418A5479A0076F4DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DFC8D4618A5479A0076F4DE /* MNDOT Cameras-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MNDOT Cameras-Prefix.pch"; sourceTree = "<group>"; };
+		2DFC8D4718A5479A0076F4DE /* UNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UNAppDelegate.h; sourceTree = "<group>"; };
+		2DFC8D4818A5479A0076F4DE /* UNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UNAppDelegate.m; sourceTree = "<group>"; };
+		2DFC8D4A18A5479A0076F4DE /* UNRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UNRootViewController.h; sourceTree = "<group>"; };
+		2DFC8D4B18A5479A0076F4DE /* UNRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UNRootViewController.m; sourceTree = "<group>"; };
+		2DFC8D4D18A5479A0076F4DE /* UNDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UNDataViewController.h; sourceTree = "<group>"; };
+		2DFC8D4E18A5479A0076F4DE /* UNDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UNDataViewController.m; sourceTree = "<group>"; };
+		2DFC8D5018A5479A0076F4DE /* UNModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UNModelController.h; sourceTree = "<group>"; };
+		2DFC8D5118A5479A0076F4DE /* UNModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UNModelController.m; sourceTree = "<group>"; };
+		2DFC8D5418A5479A0076F4DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DFC8D5618A5479A0076F4DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2DFC8D5C18A5479A0076F4DE /* MNDOT CamerasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MNDOT CamerasTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DFC8D5D18A5479A0076F4DE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2DFC8D6518A5479A0076F4DE /* MNDOT CamerasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MNDOT CamerasTests-Info.plist"; sourceTree = "<group>"; };
+		2DFC8D6718A5479A0076F4DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2DFC8D6918A5479A0076F4DE /* MNDOT_CamerasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNDOT_CamerasTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DFC8D3218A5479A0076F4DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFC8D3B18A5479A0076F4DE /* CoreGraphics.framework in Frameworks */,
+				2DFC8D3D18A5479A0076F4DE /* UIKit.framework in Frameworks */,
+				2DFC8D3918A5479A0076F4DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DFC8D5918A5479A0076F4DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFC8D5E18A5479A0076F4DE /* XCTest.framework in Frameworks */,
+				2DFC8D6018A5479A0076F4DE /* UIKit.framework in Frameworks */,
+				2DFC8D5F18A5479A0076F4DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DFC8D2C18A5479A0076F4DE = {
+			isa = PBXGroup;
+			children = (
+				2DFC8D3E18A5479A0076F4DE /* MNDOT Cameras */,
+				2DFC8D6318A5479A0076F4DE /* MNDOT CamerasTests */,
+				2DFC8D3718A5479A0076F4DE /* Frameworks */,
+				2DFC8D3618A5479A0076F4DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DFC8D3618A5479A0076F4DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DFC8D3518A5479A0076F4DE /* MNDOT Cameras.app */,
+				2DFC8D5C18A5479A0076F4DE /* MNDOT CamerasTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DFC8D3718A5479A0076F4DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DFC8D3818A5479A0076F4DE /* Foundation.framework */,
+				2DFC8D3A18A5479A0076F4DE /* CoreGraphics.framework */,
+				2DFC8D3C18A5479A0076F4DE /* UIKit.framework */,
+				2DFC8D5D18A5479A0076F4DE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DFC8D3E18A5479A0076F4DE /* MNDOT Cameras */ = {
+			isa = PBXGroup;
+			children = (
+				2DFC8D4718A5479A0076F4DE /* UNAppDelegate.h */,
+				2DFC8D4818A5479A0076F4DE /* UNAppDelegate.m */,
+				2DFC8D4A18A5479A0076F4DE /* UNRootViewController.h */,
+				2DFC8D4B18A5479A0076F4DE /* UNRootViewController.m */,
+				2DFC8D4D18A5479A0076F4DE /* UNDataViewController.h */,
+				2DFC8D4E18A5479A0076F4DE /* UNDataViewController.m */,
+				2DFC8D5018A5479A0076F4DE /* UNModelController.h */,
+				2DFC8D5118A5479A0076F4DE /* UNModelController.m */,
+				2DFC8D5318A5479A0076F4DE /* Main.storyboard */,
+				2DFC8D5618A5479A0076F4DE /* Images.xcassets */,
+				2DFC8D3F18A5479A0076F4DE /* Supporting Files */,
+			);
+			path = "MNDOT Cameras";
+			sourceTree = "<group>";
+		};
+		2DFC8D3F18A5479A0076F4DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DFC8D4018A5479A0076F4DE /* MNDOT Cameras-Info.plist */,
+				2DFC8D4118A5479A0076F4DE /* InfoPlist.strings */,
+				2DFC8D4418A5479A0076F4DE /* main.m */,
+				2DFC8D4618A5479A0076F4DE /* MNDOT Cameras-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DFC8D6318A5479A0076F4DE /* MNDOT CamerasTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DFC8D6918A5479A0076F4DE /* MNDOT_CamerasTests.m */,
+				2DFC8D6418A5479A0076F4DE /* Supporting Files */,
+			);
+			path = "MNDOT CamerasTests";
+			sourceTree = "<group>";
+		};
+		2DFC8D6418A5479A0076F4DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DFC8D6518A5479A0076F4DE /* MNDOT CamerasTests-Info.plist */,
+				2DFC8D6618A5479A0076F4DE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DFC8D3418A5479A0076F4DE /* MNDOT Cameras */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DFC8D6D18A5479A0076F4DE /* Build configuration list for PBXNativeTarget "MNDOT Cameras" */;
+			buildPhases = (
+				2DFC8D3118A5479A0076F4DE /* Sources */,
+				2DFC8D3218A5479A0076F4DE /* Frameworks */,
+				2DFC8D3318A5479A0076F4DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MNDOT Cameras";
+			productName = "MNDOT Cameras";
+			productReference = 2DFC8D3518A5479A0076F4DE /* MNDOT Cameras.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DFC8D5B18A5479A0076F4DE /* MNDOT CamerasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DFC8D7018A5479A0076F4DE /* Build configuration list for PBXNativeTarget "MNDOT CamerasTests" */;
+			buildPhases = (
+				2DFC8D5818A5479A0076F4DE /* Sources */,
+				2DFC8D5918A5479A0076F4DE /* Frameworks */,
+				2DFC8D5A18A5479A0076F4DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DFC8D6218A5479A0076F4DE /* PBXTargetDependency */,
+			);
+			name = "MNDOT CamerasTests";
+			productName = "MNDOT CamerasTests";
+			productReference = 2DFC8D5C18A5479A0076F4DE /* MNDOT CamerasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DFC8D2D18A5479A0076F4DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = UN;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = UGUF;
+				TargetAttributes = {
+					2DFC8D5B18A5479A0076F4DE = {
+						TestTargetID = 2DFC8D3418A5479A0076F4DE;
+					};
+				};
+			};
+			buildConfigurationList = 2DFC8D3018A5479A0076F4DE /* Build configuration list for PBXProject "MNDOT Cameras" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DFC8D2C18A5479A0076F4DE;
+			productRefGroup = 2DFC8D3618A5479A0076F4DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DFC8D3418A5479A0076F4DE /* MNDOT Cameras */,
+				2DFC8D5B18A5479A0076F4DE /* MNDOT CamerasTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DFC8D3318A5479A0076F4DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFC8D5718A5479A0076F4DE /* Images.xcassets in Resources */,
+				2DFC8D4318A5479A0076F4DE /* InfoPlist.strings in Resources */,
+				2DFC8D5518A5479A0076F4DE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DFC8D5A18A5479A0076F4DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFC8D6818A5479A0076F4DE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DFC8D3118A5479A0076F4DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFC8D5218A5479A0076F4DE /* UNModelController.m in Sources */,
+				2DFC8D4C18A5479A0076F4DE /* UNRootViewController.m in Sources */,
+				2DFC8D4F18A5479A0076F4DE /* UNDataViewController.m in Sources */,
+				2DFC8D4518A5479A0076F4DE /* main.m in Sources */,
+				2DFC8D4918A5479A0076F4DE /* UNAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DFC8D5818A5479A0076F4DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFC8D6A18A5479A0076F4DE /* MNDOT_CamerasTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DFC8D6218A5479A0076F4DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DFC8D3418A5479A0076F4DE /* MNDOT Cameras */;
+			targetProxy = 2DFC8D6118A5479A0076F4DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2DFC8D4118A5479A0076F4DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DFC8D4218A5479A0076F4DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2DFC8D5318A5479A0076F4DE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DFC8D5418A5479A0076F4DE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2DFC8D6618A5479A0076F4DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DFC8D6718A5479A0076F4DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DFC8D6B18A5479A0076F4DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2DFC8D6C18A5479A0076F4DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DFC8D6E18A5479A0076F4DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MNDOT Cameras/MNDOT Cameras-Prefix.pch";
+				INFOPLIST_FILE = "MNDOT Cameras/MNDOT Cameras-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2DFC8D6F18A5479A0076F4DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MNDOT Cameras/MNDOT Cameras-Prefix.pch";
+				INFOPLIST_FILE = "MNDOT Cameras/MNDOT Cameras-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2DFC8D7118A5479A0076F4DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MNDOT Cameras.app/MNDOT Cameras";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MNDOT Cameras/MNDOT Cameras-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MNDOT CamerasTests/MNDOT CamerasTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2DFC8D7218A5479A0076F4DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MNDOT Cameras.app/MNDOT Cameras";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MNDOT Cameras/MNDOT Cameras-Prefix.pch";
+				INFOPLIST_FILE = "MNDOT CamerasTests/MNDOT CamerasTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DFC8D3018A5479A0076F4DE /* Build configuration list for PBXProject "MNDOT Cameras" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DFC8D6B18A5479A0076F4DE /* Debug */,
+				2DFC8D6C18A5479A0076F4DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DFC8D6D18A5479A0076F4DE /* Build configuration list for PBXNativeTarget "MNDOT Cameras" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DFC8D6E18A5479A0076F4DE /* Debug */,
+				2DFC8D6F18A5479A0076F4DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2DFC8D7018A5479A0076F4DE /* Build configuration list for PBXNativeTarget "MNDOT CamerasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DFC8D7118A5479A0076F4DE /* Debug */,
+				2DFC8D7218A5479A0076F4DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DFC8D2D18A5479A0076F4DE /* Project object */;
+}
