@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DD2D10018C6B358006627AB /* UNAddCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD2D0FE18C6B358006627AB /* UNAddCameraViewController.m */; };
+		2DD2D10118C6B358006627AB /* UNAddCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DD2D0FF18C6B358006627AB /* UNAddCameraViewController.xib */; };
 		2DFC8D3918A5479A0076F4DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFC8D3818A5479A0076F4DE /* Foundation.framework */; };
 		2DFC8D3B18A5479A0076F4DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFC8D3A18A5479A0076F4DE /* CoreGraphics.framework */; };
 		2DFC8D3D18A5479A0076F4DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFC8D3C18A5479A0076F4DE /* UIKit.framework */; };
@@ -23,6 +25,7 @@
 		2DFC8D6018A5479A0076F4DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DFC8D3C18A5479A0076F4DE /* UIKit.framework */; };
 		2DFC8D6818A5479A0076F4DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DFC8D6618A5479A0076F4DE /* InfoPlist.strings */; };
 		2DFC8D6A18A5479A0076F4DE /* MNDOT_CamerasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC8D6918A5479A0076F4DE /* MNDOT_CamerasTests.m */; };
+		2DFC8D7518A549340076F4DE /* UNCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFC8D7418A549340076F4DE /* UNCamera.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DD2D0FD18C6B358006627AB /* UNAddCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNAddCameraViewController.h; sourceTree = "<group>"; };
+		2DD2D0FE18C6B358006627AB /* UNAddCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNAddCameraViewController.m; sourceTree = "<group>"; };
+		2DD2D0FF18C6B358006627AB /* UNAddCameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UNAddCameraViewController.xib; sourceTree = "<group>"; };
 		2DFC8D3518A5479A0076F4DE /* MNDOT Cameras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MNDOT Cameras.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFC8D3818A5479A0076F4DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2DFC8D3A18A5479A0076F4DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,6 +65,8 @@
 		2DFC8D6518A5479A0076F4DE /* MNDOT CamerasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MNDOT CamerasTests-Info.plist"; sourceTree = "<group>"; };
 		2DFC8D6718A5479A0076F4DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2DFC8D6918A5479A0076F4DE /* MNDOT_CamerasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNDOT_CamerasTests.m; sourceTree = "<group>"; };
+		2DFC8D7318A549340076F4DE /* UNCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UNCamera.h; sourceTree = "<group>"; };
+		2DFC8D7418A549340076F4DE /* UNCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UNCamera.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,11 @@
 				2DFC8D4E18A5479A0076F4DE /* UNDataViewController.m */,
 				2DFC8D5018A5479A0076F4DE /* UNModelController.h */,
 				2DFC8D5118A5479A0076F4DE /* UNModelController.m */,
+				2DFC8D7318A549340076F4DE /* UNCamera.h */,
+				2DFC8D7418A549340076F4DE /* UNCamera.m */,
+				2DD2D0FD18C6B358006627AB /* UNAddCameraViewController.h */,
+				2DD2D0FE18C6B358006627AB /* UNAddCameraViewController.m */,
+				2DD2D0FF18C6B358006627AB /* UNAddCameraViewController.xib */,
 				2DFC8D5318A5479A0076F4DE /* Main.storyboard */,
 				2DFC8D5618A5479A0076F4DE /* Images.xcassets */,
 				2DFC8D3F18A5479A0076F4DE /* Supporting Files */,
@@ -242,6 +255,7 @@
 				2DFC8D5718A5479A0076F4DE /* Images.xcassets in Resources */,
 				2DFC8D4318A5479A0076F4DE /* InfoPlist.strings in Resources */,
 				2DFC8D5518A5479A0076F4DE /* Main.storyboard in Resources */,
+				2DD2D10118C6B358006627AB /* UNAddCameraViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +276,11 @@
 			files = (
 				2DFC8D5218A5479A0076F4DE /* UNModelController.m in Sources */,
 				2DFC8D4C18A5479A0076F4DE /* UNRootViewController.m in Sources */,
+				2DD2D10018C6B358006627AB /* UNAddCameraViewController.m in Sources */,
 				2DFC8D4F18A5479A0076F4DE /* UNDataViewController.m in Sources */,
 				2DFC8D4518A5479A0076F4DE /* main.m in Sources */,
 				2DFC8D4918A5479A0076F4DE /* UNAppDelegate.m in Sources */,
+				2DFC8D7518A549340076F4DE /* UNCamera.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +489,7 @@
 				2DFC8D6F18A5479A0076F4DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2DFC8D7018A5479A0076F4DE /* Build configuration list for PBXNativeTarget "MNDOT CamerasTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +498,7 @@
 				2DFC8D7218A5479A0076F4DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

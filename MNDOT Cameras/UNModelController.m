@@ -9,6 +9,7 @@
 #import "UNModelController.h"
 
 #import "UNDataViewController.h"
+#import "UNCamera.h"
 
 /*
  A controller object that manages a simple model -- a collection of month names.
@@ -20,46 +21,70 @@
  */
 
 @interface UNModelController()
-@property (readonly, strong, nonatomic) NSArray *pageData;
+//@property (readonly, strong, nonatomic) NSArray *pageData;
 @end
 
-@implementation UNModelController
+@implementation UNModelController {
+    NSMutableArray *_cameras;
+    NSString *_cameraBaseUrl;
+}
 
-- (id)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         // Create the data model.
-        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-        _pageData = [[dateFormatter monthSymbols] copy];
+//        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//        _pageData = [[dateFormatter monthSymbols] copy];
+
+        // Load from disk
+        
+        _cameraBaseUrl = @"http://video.dot.state.mn.us/video/image/metro/";
+        UNCamera *camera1 = [[UNCamera alloc] initWithDisplayName:@"C917"
+                                                              url:[NSURL URLWithString:@"http://video.dot.state.mn.us/video/image/metro/C917.jpg"]];
+        UNCamera *camera2 = [[UNCamera alloc] initWithDisplayName:@"C919"
+                                                              url:[NSURL URLWithString:@"http://video.dot.state.mn.us/video/image/metro/C919.jpg"]];
+        if (camera1 && camera2) {
+            _cameras = [@[camera1, camera2] mutableCopy];
+        }
+        else {
+            NSLog(@"unable to create camera object");
+        }
+
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(handleAddCameraNotification:)
+                                                     name:@"addCamera"
+                                                   object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(handleDeleteCameraNotification:)
+                                                     name:@"deleteCamera"
+                                                   object:nil];
     }
     return self;
 }
 
-- (UNDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard
-{   
+- (UNDataViewController *)viewControllerAtIndex:(NSUInteger)index
+                                     storyboard:(UIStoryboard *)storyboard {
     // Return the data view controller for the given index.
-    if (([self.pageData count] == 0) || (index >= [self.pageData count])) {
+    if (([_cameras count] == 0) || (index >= [_cameras count])) {
         return nil;
     }
     
     // Create a new view controller and pass suitable data.
     UNDataViewController *dataViewController = [storyboard instantiateViewControllerWithIdentifier:@"UNDataViewController"];
-    dataViewController.dataObject = self.pageData[index];
+    dataViewController.dataObject = _cameras[index];
     return dataViewController;
 }
 
-- (NSUInteger)indexOfViewController:(UNDataViewController *)viewController
-{   
+- (NSUInteger)indexOfViewController:(UNDataViewController *)viewController {
      // Return the index of the given data view controller.
      // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
-    return [self.pageData indexOfObject:viewController.dataObject];
+    return [_cameras indexOfObject:viewController.dataObject];
 }
 
 #pragma mark - Page View Controller Data Source
 
-- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
-{
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController
+      viewControllerBeforeViewController:(UIViewController *)viewController {
     NSUInteger index = [self indexOfViewController:(UNDataViewController *)viewController];
     if ((index == 0) || (index == NSNotFound)) {
         return nil;
@@ -69,18 +94,57 @@
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
 }
 
-- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
-{
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController
+       viewControllerAfterViewController:(UIViewController *)viewController {
     NSUInteger index = [self indexOfViewController:(UNDataViewController *)viewController];
     if (index == NSNotFound) {
         return nil;
     }
     
     index++;
-    if (index == [self.pageData count]) {
+    if (index == [_cameras count]) {
         return nil;
     }
     return [self viewControllerAtIndex:index storyboard:viewController.storyboard];
+}
+
+- (void)handleAddCameraNotification:(NSNotification *)notification {
+    NSLog(@"notification: (%@)", notification);
+    NSString *cameraName = notification.userInfo[@"cameraName"];
+    if (cameraName) {
+        NSString *url = [_cameraBaseUrl stringByAppendingFormat:@"%@.jpg", cameraName];
+        NSLog(@"full camera URL: (%@)", url);
+        UNCamera *camera = [[UNCamera alloc] initWithDisplayName:cameraName
+                                                             url:[NSURL URLWithString:url]];
+        if (camera) {
+            [_cameras addObject:camera];
+        }
+        else {
+            NSLog(@"couldn't make camera");
+        }
+    }
+}
+
+- (void)handleDeleteCameraNotification:(NSNotification *)notification {
+    if (!notification) {
+        NSLog(@"notification is nil");
+        return;
+    }
+    if (!notification.userInfo) {
+        NSLog(@"notification.userInfo is nil");
+        return;
+    }
+    UNCamera *camera = notification.userInfo[@"camera"];
+    if (!camera) {
+        NSLog(@"no camera found in userInfo dictionary");
+        return;
+    }
+
+
+    [_cameras removeObject:camera];
+    NSLog(@"removing camera: (%@)", camera);
+    // Reset to index 0
+#warning ???
 }
 
 @end

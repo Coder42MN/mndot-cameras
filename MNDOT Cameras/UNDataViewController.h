@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class UNCamera;
+
 @interface UNDataViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *dataLabel;
-@property (strong, nonatomic) id dataObject;
+@property (strong, nonatomic) UNCamera *dataObject;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+
+- (IBAction)addCamera:(id)sender;
 
 @end

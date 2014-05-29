@@ -15,4 +15,6 @@
 - (UNDataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
 - (NSUInteger)indexOfViewController:(UNDataViewController *)viewController;
 
+@property (nonatomic, weak) id<UIPageViewControllerDelegate> pageViewDelegate;
+
 @end
